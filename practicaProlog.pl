@@ -1,3 +1,5 @@
+# URL http://www.ciens.ucv.ve/portapi/sites/157/files/2725
+
 1. Considere los siguientes hechos y reglas:
 predecesor(luisa, veronica).
 predecesor(guillermo, veronica).
@@ -31,13 +33,10 @@ preguntas, indicando las respuestas obtenidas.
 •
 •
 ?- m(X,s(s(0))).
-?- m(X,s(X)).Universidad Central de Venezuela
-Facultad de Ciencias
-Escuela
-de Computación Lenguajes de
-Programación
-Practica #3: Programación Lógica
+?- m(X,s(X)).
+
 PARTE II: LISTAS
+
 3.
 Implemente predicados en lenguaje Prolog que permita definir
 operaciones básicas de listas:
@@ -74,12 +73,8 @@ yes
 9.
 descomCambio (X,Xs) :- Xs representa una combinación ordenada
 de un conjunto de enteros, (1,5,25,100), que son necesarias para alcanzar el
-valor exacto de X.Universidad Central de Venezuela
-Facultad de Ciencias
-Escuela
-de Computación Lenguajes de
-Programación
-Practica #3: Programación Lógica
+valor exacto de X.
+
 ? descomCambio ([155],V).
 V = [100,25,25,5].
 10.
@@ -111,12 +106,7 @@ Ejemplo:
 subLista([3,2],[1,6,2,3]).
 No
 subLista([3,2],[1,6,3,2]).
-YesUniversidad Central de Venezuela
-Facultad de Ciencias
-Escuela
-de Computación Lenguajes de
-Programación
-Practica #3: Programación Lógica
+Yes
 14.
 Dada una lista y una posición, eliminar los N primeros elementos de una
 lista y devuelve el resto.
