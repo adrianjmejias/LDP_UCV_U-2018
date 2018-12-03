@@ -119,16 +119,14 @@ multiplicar 3 [4,8,9]
 multiplicar 5 [9,9,9,1,4,6]
 [4,9,9,5,7,3,0]
 14. Una lista de enteros es palíndrome, si cada uno de los números que la conforman son
-palíndromes y además la lista se puede leer de derecha a izquierda y viceversa, es decir,Universidad Central de Venezuela
-Facultad de Ciencias
-Escuela
-de Computación Lenguajes de
-Programación
-Practica #1: Programación Funcional
+palíndromes y además la lista se puede leer de derecha a izquierda y viceversa, es decir,
+
+
 [1,2,3,2,1] es palíndrome, pero [1,21,3,21,1] no, ya que 21 no es palíndrome, [1,2,3,4,5]
 tampoco porque [1,2,3,4,5] es diferente de [5,4,3,2,1]. Se quiere que Ud. Implemente un
 predicado getPals(L), que reciba como entrada una lista de listas de enteros
 ([[Int]]) y retorne una lista de listas con todas aquellas listas que sean palíndromes.
+
 15. Escriba programas en el lenguaje de programación Haskell que le permitan resolver
 cada uno de los siguientes problemas:
 a) Dada dos listas A y B, verificar si eliminando elementos de la lista A se puede
@@ -162,12 +160,14 @@ E: m_Sublista [1, 2, 3, 1, 4, 2, 1, 5,7] 1
 S: [[], [2,3], [4,2], [5,7]]
 E: m_Sublista [1, 2, 3, 1, 4, 2, 1, 5, 7,2] 2
 S: [[1], [3, 1,4], [1, 5,7], []]
+
 20. Realice una función m_Matriz :: [[Int]] -> [[Int]] -> [[Int]] que
 permita realizar la multiplicación de dos matrices NxM y MxO. (Sugerencias: Realice
 primero la multiplicación de una matriz por un vector. La matriz de entrada es valida).
 E: m_Matriz [[1,2,3,4],[5,6,7,8],[9,10,11,12]] [[1,5,10],
 [2,6,11],[3,7,12],[4,8,13]]
 S: [[30, 70,120], [70, 174,304], [110, 278,488]]
+
 21. Escriba una función M_Lista, que dada una lista de entrada L de números enteros, con
 valores repetidos, retorne una lista de sublistas (sin elementos repetidos), donde cada
 una de las cuales esté formada por los siguientes componentes:
@@ -177,33 +177,30 @@ c) La sumatoria de las ocurrencias del número anterior en la lista L.
 E: M_Lista [5,7,7]
 S: [[5,1,5] , [7,2,14]]
 E: M_Lista [1,2,3,2,3,4]
-S: [[1,1,1] , [2,2,4],[3,2,6], [4,1,4]]Universidad Central de Venezuela
-Facultad de Ciencias
-Escuela
-de Computación Lenguajes de
-Programación
-Practica #1: Programación Funcional
+S: [[1,1,1] , [2,2,4],[3,2,6], [4,1,4]]
+
 22. Escriba una función prodCart que dado dos listas retorne una lista de duplas
 resultante de realizar el producto cartesiano entre las dos listas.
 E: prodCart [1,2,3] [1,2]
 S: [(1,1),(1,2),(2,1),(2,2),(3,1),(3,2)]
+
 23. Escriba una función permutaciones que dado una lista retorne una lista de listas con
 todas las permutaciones de los valores en la lista.
 E: permutaciones [1,2,3]
 S: [[1,2,3],[1,3,2],[2,3,1],[2,1,3],[3,1,2],[3,2,1]]
+
 24. Dado una Lista de Listas cualquiera, realice una función que retorne una Lista de Listas
 que cumpla con la condición: La sublista Xi no debe tener elementos de la sublista Xj
 con i > j.
 E: [[1,2,3],[2,4],[3,4,5,6]]
 S: [[1,2,3],[4],[5,6]]
+
 25. Escriba una función que dado la estructura de datos Arbol permita determinar si es un
 heap. Un árbol es heap si cumple las siguientes condiciones:
-•
-El árbol debe ser binario, es decir cada nodo tiene grado 2.
-•
-Los nodos y hojas poseen un valor entero.
-•
-Para cada nodo, todos sus hijos deben tener un valor mayor o igual que el suyo.
+• El árbol debe ser binario, es decir cada nodo tiene grado 2.
+• Los nodos y hojas poseen un valor entero.
+• Para cada nodo, todos sus hijos deben tener un valor mayor o igual que el suyo.
+
 La estructura Arbol a utilizarse se presenta a continuación:
 data Arbol= Hoja Int | Nodo Int Arbol Arbol
 E: heap (Nodo 2 (Nodo 3 (Hoja 4) (Hoja 7)) (Hoja 6))
