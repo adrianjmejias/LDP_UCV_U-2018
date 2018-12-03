@@ -1,3 +1,5 @@
+-- URL http://www.ciens.ucv.ve/portapi/sites/157/files/2633
+
 1. Definir las siguientes funciones y determinar su tipo:
 
 • apply, que toma una función y un valor, y devuelve el resultado de aplicar la
