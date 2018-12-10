@@ -7,8 +7,6 @@
 -- prodCart::(Eq a, Eq b) => [a] -> [b] -> [(a,b)]
 
 ------------------------------ Llamadas de Ejemplo 
---1 of 1] Compiling Main             ( 22_19932730.hs, interpreted )
---Ok, modules loaded: Main.
 -- *Main> prodCart [1,2] [2,3]
 --[(1,2),(1,3),(2,2),(2,3)]
 -- *Main> prodCart [4,2,3] [2,3,5]
