@@ -1,4 +1,4 @@
-------------------------- Enunciado del Problema
+------------------------ Enunciado del Problema
 -- 4. Dada una lista y un elemento, verificar si este pertenece a dicha lista.
 --pertenece (E, LISTA).
 
