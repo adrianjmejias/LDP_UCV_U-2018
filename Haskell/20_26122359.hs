@@ -1,21 +1,31 @@
 ------------------------- Enunciado del Problema
---5. Sea la siguiente definición de función:
---mifun s = foldr op 0 s
---where op x r = head x + r
---a) ¿Cuál es el tipo de datos de mifun?
---b) ¿Cuál es el resultado de evaluar mifun [[1,2,3],[2,4],[3,5]]?
---c) ¿Cuál de las definiciones siguientes es una definición alternativa equivalente?
---(Def 1) mifun
---(Def 2) mifun
---(Def 3) mifun
---s = sum (map head s)
---s = map op s
---where op x r = head x + r
---[] = 0
---mifun (x:xs) = x + mifun xs
+--20. Realice una función m_Matriz :: [[Int]] -> [[Int]] -> [[Int]] que
+--permita realizar la multiplicación de dos matrices NxM y MxO. (Sugerencias: Realice
+--primero la multiplicación de una matriz por un vector. La matriz de entrada es valida).
+
+--------------------------------- Explicación
+-- multivm se encarga de multiplicar matri por vector
+-- ppunto se encarga de multiplicar vecto por vector
+
+------------------------------ Llamadas de Ejemplo 
+--multiMX [[1,2,3,4],[5,6,7,8],[9,10,11,12]] [[1,5,10],[2,6,11],[3,7,12],[4,8,13]]
+--[[30,70,120],[70,174,304],[110,278,488]]
 
 -------------------------------- Resolución
 
-mifun :: [[Integer]]->Integer
-mifun s = foldr op 0 s
-where op x r = head x + r                 
+multiMX:: [[Int]]->[[Int]]->[[Int]]
+multiMX [] ys =[]
+multiMX (x:xs) ys = multiVM x (traspuesta ys): multiMX xs ys 
+
+
+multiVM:: [Int]->[[Int]]->[Int]
+multiVM _ [] = []
+multiVM xs (y:ys) = ppunto xs y : multiVM xs ys
+
+ppunto:: [Int]->[Int]->Int
+ppunto [] [] = 0
+ppunto (x:xs) (y:ys) = x*y+ ppunto xs ys
+
+traspuesta:: (Eq a)=> [[a]]-> [[a]]
+traspuesta x | foldr (&&) True (map null x) = []
+             | otherwise = (map head x) : traspuesta (map tail x)                  
