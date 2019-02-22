@@ -10,9 +10,11 @@
 
 ------------------------------ Llamadas de Ejemplo 
 --Ok, modules loaded: Main.
--- *Main> posiciones 2 [2,3,4,6,2,21,2]
+-- *Main> 
+-- posiciones 21 [2,3,4,6,2,21,2]
 --[0,4,6]
--- *Main> posiciones 21 [2,3,4,6,2,21,2]
+-- *Main> 
+-- posiciones 2 [2,3,4,6,2,21,2]
 -- [5]
 -- *Main> 
 

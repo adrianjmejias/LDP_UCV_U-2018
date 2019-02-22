@@ -18,7 +18,7 @@
 % se usaron dos funciones una es sumelem,y esta suma lo que son los elemento en la lista, ejemplo [1,2,3] esta de una valor 6
 % luego se realizamos la funcion sumelem_lista , una vez que ya tenemos ese valor 6 lo sumamos a cada elemento de la lista sumaAnt
 
-sumaAnt([X|Xs],Ts):-sumelem([X|Xs],Z), sumelem_lista([X|Xs],Z,Ts).
+sumaAnt([X|Xs],Ts):-sumelem([X|Xs],Z), sumelem_lista([X|Xs],Z,Ts):-!.
 
 sumelem([X|Xs],C):- sumelem(Xs,T), C is T+X.
 sumelem([X],X).
