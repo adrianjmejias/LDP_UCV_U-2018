@@ -16,6 +16,6 @@
 
 %-------------------------------- Resolución
 
-%--igual(_,[]):-!.
-%--igual(X,[Y|Ys]):- X is Y, igual(Y,Ys).
-%--sonIguales([X,Y|Xs]):- X is Y, igual(Y,Xs).
+igual(_,[]):-!.
+igual(X,[Y|Ys]):- X is Y, igual(Y,Ys).
+sonIguales([X,Y|Xs]):- X is Y, igual(Y,Xs).
