@@ -6,7 +6,8 @@
 %-- Funcion arit, Separo ambas listas de entrada en Head y Tail y le aplico la operacion correspondiente.
 
 %------------------------------ Llamadas de Ejemplo 
-%-- > Ejemplo: arit(+,[1,1,1],[1,2,3],Z).
+%-- > Ejemplo: 
+%             arit(+,[1,1,1],[1,2,3],Z).
 %              [2,3,4].
 %
 %              arit(-,[1,1,1],[1,2,3],Z).
